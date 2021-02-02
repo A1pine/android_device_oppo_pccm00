@@ -21,7 +21,7 @@
 # definition file).
 #
 
-TARGET_BOARD_PLATFORM := msmnile
+TARGET_BOARD_PLATFORM := sm8150
 DEVICE_PATH := device/oppo/pccm00
 
 # Architecture
