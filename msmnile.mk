@@ -23,6 +23,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # A/B
 AB_OTA_UPDATER := false
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    tinymix
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
@@ -41,3 +46,5 @@ PRODUCT_COPY_FILES += \
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+
