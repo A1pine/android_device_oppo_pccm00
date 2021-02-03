@@ -33,3 +33,7 @@ PRODUCT_BUILD_PRODUCT_IMAGE := false
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
+
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
