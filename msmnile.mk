@@ -40,6 +40,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := false
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_BUILD_PRODUCT_IMAGE := false
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
 
